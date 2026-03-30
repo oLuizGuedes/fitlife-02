@@ -21,11 +21,28 @@
 
     <main>
         <section>
-            <header>
-                <h1>Calculadora de IMC</h1>
-                <p>Calcule seu Índice de Massa Corporal (IMC) com facilidade.</p>
-            </header>
+            <h1>Calcúlo de IMC</h1>
+            
+            <form>
+                
+                <label for="weight">Peso (kg)</label>
+                <input type="number" id="weight" placeholder="Ex: 70" required>
 
+                <label for="height">Altura (m)</label>
+                <input type="number" id="height" placeholder="Ex: 1.8" required
+                step="any">
+
+                <button type="submit">Calcular</button>
+
+
+            </form>
+
+            <div>
+                <p>Seu IMC é:</p>
+                <h2>00.0</h2>
+                <p>Classificação</p>
+            </div>
+           
             <a href="../index.html">Voltar</a>
         </section>
     </main>

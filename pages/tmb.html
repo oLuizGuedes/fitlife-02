@@ -21,10 +21,34 @@
 
     <main>
         <section>
-            <header>
-                <h1>Taxa Metabólica Basal</h1>
-                <p>Calcule sua Taxa Metabólica Basal (TMB) com facilidade.</p>
-            </header>
+            <h1>Taxa Metabólica Basal</h1>
+
+            <form>
+
+                <label for="gender">Gênero</label>
+                <select id="gender">
+
+                    <option value="male">Masculino</option>
+                    <option value="female">Feminino</option>
+                </select>
+
+                <label for="weight">Peso (kg)</label>
+                <input type="number" id="weight" placeholder="Ex: 70">
+
+                <label for="height">Altura (cm)</label>
+                <input type="number" id="height" placeholder="Ex: 183">
+
+                <label for="age">Idade (anos)</label>
+                <input type="number" id="age" placeholder="Ex: 22">
+
+                <button type="submit">Calcular Calorias</button>
+            </form>
+
+            <div>
+                <p>Gasto Calórico Basal</p>
+                <h2>0000</h2>
+                <p>Kcal/dia</p>
+            </div>
 
             <a href="../index.html">Voltar</a>
         </section>
