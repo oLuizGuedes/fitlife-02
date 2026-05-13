@@ -16,7 +16,7 @@
 <body>
 
     <nav>
-        <a class="logo" href="index.html">
+        <a class="logo" href="../index.html">
             <i class="fas fa-heartbeat"></i> FitLife
         </a>
 
@@ -48,19 +48,21 @@
                     >
                 </div>
 
-                <button class="action-btn" type="submit">Calcular</button>
-                <a class="action-btn" href="../index.html">Voltar</a>
+                <button class="action-btn" type="submit" onclick="calculateIMC(event)">Calcular</button>
+                <a class="action-btn btn-back" href="../index.html">Voltar</a>
             </form>
 
-            <div>
+            <div id="result" class="result-box">
                 <p>Seu IMC é:</p>
-                <h2>00.0</h2>
-                <p>Classificação</p>
+                <h2 id="imc-value">00.0</h2>
+                <p id="imc-desc">Classificação</p>
             </div>
 
         </section>
         
     </main>
     
+
+    <script src="../js/imc.js"></script>
 </body>
 </html>
