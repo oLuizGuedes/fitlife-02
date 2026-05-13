@@ -164,6 +164,11 @@ main {
     font-family: inherit;
 }
 
+.form-group input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
 .action-btn {
     padding: 0.8rem 1rem;
     background-color: var(--primary-color);
@@ -177,3 +182,22 @@ main {
     text-decoration: none;
     text-align: center;
 }
+
+.action-btn:hover {
+    background-color: var(--primary-dark);
+}
+
+.btn-back {
+    background-color: var(--muted-color);
+}
+
+.btn-back:hover {
+    background-color: var(--secondary-color);
+}
+
+.result-box {
+    padding: 1.25rem;
+    border-radius: 10px;
+    background-color: #e8f8f5;
+    text-align: center;
+}    
